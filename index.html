@@ -16,10 +16,12 @@
 
     	this.add = function (i) {
             this.i += i;
+            return this;
         };
 
         this.subtract = function (i) {
     		this.i -= i;
+    		return this;
         };
 
         this.print = function () {
@@ -36,7 +38,7 @@
 
     try {
 
-	    //can't do yet
+	    //can do now:  =D
 	    x.add(3).subtract(2).print();
 
     }
