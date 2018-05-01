@@ -55,6 +55,18 @@
 	    document.getElementById('console').innerHTML = err.message;
     }
 
+    //to examine the fact that "i is a closure", this code prints to console.
+    //in chrome can expand the "Object {}" returned, will show
+        // ↓ Object {}
+        //      → add: function(j)
+        //      → print: function()
+        //      ↓ subtract: function(j)
+        //          ↓ <function scope>
+        //              ↓ Closure
+        //                  i: 0
+
+    console.log(x);
+
 
 </script>
 </html>
